@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tools - Encryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>CyberSecurity Tools</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="tools.html">Tools</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <h1>🔐 Encryption & Decryption Tools</h1>
+
+    <!-- Input Section -->
+    <textarea id="inputText" placeholder="Enter your message..."></textarea>
+
+    <input type="number" id="key" placeholder="Key (for Caesar/Vigenère)" min="1">
+
+    <div class="buttons">
+        <button onclick="caesarEncrypt()">Caesar Encrypt</button>
+        <button onclick="caesarDecrypt()">Caesar Decrypt</button>
+        <button onclick="vigEncrypt()">Vigenère Encrypt</button>
+        <button onclick="vigDecrypt()">Vigenère Decrypt</button>
+        <button onclick="base64Encode()">Base64 Encode</button>
+        <button onclick="base64Decode()">Base64 Decode</button>
+    </div>
+
+    <h3>Output:</h3>
+    <textarea id="outputText" readonly></textarea>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
